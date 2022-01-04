@@ -84,7 +84,7 @@ MonoBehaviour:
     cardinality=\"-1\" hasParent=\"False\">\r\n          <BehaviorTree id=\"0\" />\r\n         
     <SequenceNode id=\"1\" />\r\n        </data>\r\n      </_data>\r\n    </SequenceNode>\r\n   
     <RepeatUntilSuccess id=\"2\">\r\n      <_data>\r\n        <data breakpoint=\"0\"
-    selected=\"False\" position=\"219.9955 236.4878\" name=\"Repeat Until Success\"
+    selected=\"False\" position=\"218.3288 236.4878\" name=\"Repeat Until Success\"
     description=\"Repeats the execution of its child node until it success\" cardinality=\"1\"
     hasParent=\"True\">\r\n          <BehaviorTree id=\"0\" />\r\n          <RepeatUntilSuccess
     id=\"2\" />\r\n          <SequenceNode id=\"1\" />\r\n        </data>\r\n     
@@ -94,7 +94,7 @@ MonoBehaviour:
     its child node until it fails\" cardinality=\"1\" hasParent=\"True\">\r\n         
     <BehaviorTree id=\"0\" />\r\n          <RepeatUntilFailed id=\"4\" />\r\n         
     <SequenceNode id=\"1\" />\r\n        </data>\r\n      </_data>\r\n    </RepeatUntilFailed>\r\n   
-    <ConditionNode id=\"3\">\r\n      <_data>\r\n        <data breakpoint=\"0\" selected=\"False\"
+    <ConditionNode id=\"3\">\r\n      <_data>\r\n        <data breakpoint=\"0\" selected=\"True\"
     position=\"254.4398 363.1554\" name=\"Perception/IsTargetClose\" description=\"Checks
     whether a target is close depending on a given distance\" cardinality=\"0\" hasParent=\"True\">\r\n         
     <BehaviorTree id=\"0\" />\r\n          <ConditionNode id=\"3\" />\r\n         
@@ -108,7 +108,7 @@ MonoBehaviour:
     selected=\"False\" position=\"0 0\" name=\"AlwaysTrue\" description=\"Eval\"
     cardinality=\"1\" hasParent=\"False\">\r\n          <BehaviorTree id=\"0\" />\r\n       
     </data>\r\n      </_data>\r\n    </ConditionEvalNode>\r\n    <ActionNode id=\"7\">\r\n     
-    <_data>\r\n        <data breakpoint=\"0\" selected=\"True\" position=\"562.692
+    <_data>\r\n        <data breakpoint=\"0\" selected=\"False\" position=\"562.692
     447.9897\" name=\"Cops/FindClosestCop\" description=\"Get the Closest Free Cop.\"
     cardinality=\"0\" hasParent=\"True\">\r\n          <BehaviorTree id=\"0\" />\r\n         
     <ActionNode id=\"7\" />\r\n          <SequenceNode id=\"5\" />\r\n        </data>\r\n     
@@ -118,7 +118,7 @@ MonoBehaviour:
     hasParent=\"True\">\r\n          <BehaviorTree id=\"0\" />\r\n          <RandomSelectorNode
     id=\"6\" />\r\n          <SequenceNode id=\"5\" />\r\n        </data>\r\n     
     </_data>\r\n    </RandomSelectorNode>\r\n    <ActionNode id=\"8\">\r\n      <_data>\r\n       
-    <data breakpoint=\"0\" selected=\"False\" position=\"719.6525 651.6773\" name=\"GameObject/SendMessage\"
+    <data breakpoint=\"0\" selected=\"False\" position=\"721.3192 651.6773\" name=\"GameObject/SendMessage\"
     description=\"Calls the method named methodName on every MonoBehaviour in this
     game object\" cardinality=\"0\" hasParent=\"True\">\r\n          <BehaviorTree
     id=\"0\" />\r\n          <ActionNode id=\"8\" />\r\n          <RandomSelectorNode

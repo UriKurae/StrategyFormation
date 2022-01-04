@@ -8,6 +8,7 @@ public class Formation : MonoBehaviour
     public Vector3 pos;
     public Quaternion rot;
     public Vector3 relativeTo;
+    public Moves moves;
 
     void Start()
     {
@@ -17,7 +18,10 @@ public class Formation : MonoBehaviour
 
     void Update()
     {
-        transform.rotation = target.transform.rotation;
-        agent.destination = target.transform.TransformPoint(relativeTo);
+        if (!moves.found)
+        {
+            transform.rotation = target.transform.rotation;
+            agent.destination = target.transform.TransformPoint(relativeTo);
+        }  
     }
 }

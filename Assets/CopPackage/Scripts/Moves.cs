@@ -27,6 +27,10 @@ public class Moves : MonoBehaviour
             if (!found && agent.remainingDistance < 2)
                 Wander(); 
         }
+        else if (this.gameObject.name != "CopLeader" && found)
+        {
+            agent.destination = target.transform.position;
+        }
     }
 
     public void BBSeekRobber()
